@@ -1,0 +1,33 @@
+/*
+ * ItemList scss File
+*/
+
+.item-list {
+  display: flex;
+  justify-content: center;
+
+  .list-group-item {
+    border: 0;
+    transition: .5s;
+    cursor: pointer;
+    padding: .2rem;
+    margin: .2rem 0;
+    border-bottom: 1px solid black;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      color: white;
+      background: black;
+    }
+
+    .item-text {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: .2rem;
+      user-select: none;
+    }
+  }
+
+}

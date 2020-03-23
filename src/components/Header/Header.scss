@@ -1,0 +1,39 @@
+.header {
+  align-items: center;
+  padding: .5rem 0;
+  display: flex;
+
+  .header-logo {
+    margin: 0;
+    padding: .3rem;
+  }
+
+
+  .menu-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .menu-list-item {
+      display: flex;
+      list-style: none;
+      padding: .3rem;
+      margin: 0 .1rem;
+      transition: .5s;
+      user-select: none;
+
+      &:hover{
+        cursor: pointer;
+        color: white;
+        background: black;
+        transform: scale(1.1);
+      }
+
+      &:active, &:focus {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
